@@ -1,6 +1,6 @@
 // DQ4.v -- array of 4 DQ F/F
 //
-// PUT YOUR NAME HERE
+// Izzy Ehnes
 //
 
 module SR(S, R, O);
@@ -16,9 +16,10 @@ module SR(S, R, O);
 endmoudle
 
 module DQ(D, en, Q);
-   ...
-   ...
-   ...
+    input D, en;
+    output Q;
+
+    SR SR0((D & en), (en & ~D), Q);
 endmodule
 
 module DQ4(D, en, Q);
