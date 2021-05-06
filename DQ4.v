@@ -13,7 +13,7 @@ module SR(S, R, O);
     nor(bot, R, top);
 
     assign #1 O = bot;
-endmoudle
+endmodule
 
 module DQ(D, en, Q);
     input D, en;
