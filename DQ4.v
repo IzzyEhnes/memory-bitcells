@@ -1,7 +1,8 @@
-// DQ4.v -- array of 4 DQ F/F
-//
 // Izzy Ehnes
-//
+// DQ4.v -- array of 4 DQ F/F
+// Version: Icarus Verilog v. 11.0
+// Compile: $ iverilog -o DQ4 DQ4.v
+// Run: $ vvp DQ4
 
 module SR(S, R, O);
     input S, R;
