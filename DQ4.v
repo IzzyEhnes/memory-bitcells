@@ -23,10 +23,14 @@ module DQ(D, en, Q);
 endmodule
 
 module DQ4(D, en, Q);
-   ...
-   ...
-   DQ myDQ [0:3] (...);
-   ...
+    input en;
+    input [0:3] d;
+    output [0:3] q;
+
+    DQ myDQ0(d[0], en, q[0]);
+    DQ myDQ1(d[1], en, q[1]);
+    DQ myDQ2(d[2], en, q[2]);
+    DQ myDQ3(d[3], en, q[3]);
 endmodule
 
 module TestMod;
